@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicis JavaScript</title>
+</head>
+<body>
+    <script>
+        /*  EXERCICI 1: "Hola món!" per consola
+        console.log("Hello World!");
+        */
+
+        /* EXERCICI 2 i 3: Mostrar el meu nom en un alert
+        var firstName = "Xavier";
+        var lastName = "Méndez"
+        alert("My name is " + firstName + " " + lastName);
+        alert(`My name is  ${firstName} ${lastName}`);
+
+
+        /* EXERCICI 4: Crea dos variables amb dos números i fes una suma entre ells.
+        var x = 45;
+        var y = 79;
+        alert(`The addition of ${x} and ${y} is: ${(x + y)}`);
+
+
+        /* EXERCICI 5: Crea una variable nota_examen juntament amb un alert que ens digui si l’examen ha estat aprovat o no juntament amb la nota. (caldrà utilitzar un condicional IF)
+        nota_examen = 4.6;
+        function resultat (x){
+            return x >= 5? console.log("Has aprovat amb un " + x) : console.log("Has suspès amb un " + x);
+        }
+        resultat(nota_examen);
+
+        nota_examen = 7.8;
+        resultat(nota_examen);
+
+        /* EXERCICI 6: Reemplaça la paraula blau per la paraula verd a la següent cadena de text Tinc un cotxe de color blau. Després intenta fer-ho remplaçant les o per les u
+        var stringBlau = "Tinc un cotxe de color blau";
+        var stringVerd = stringBlau.replace("blau", "verd");
+        console.log(stringVerd);
+        var stringVerd = stringBlau.replace(/o/g, "u");
+        console.log(stringVerd);
+        */
+
+        /* EXERCICI 7: Donat el seguit llistat d’objectes ‘taula’, ‘cadira’, ‘ordinador’, ‘libreta’, per un bucle que mostri per pantalla cada objecte i la save posició al llistat
+        var obj = ["taula", "cadira", "ordinador", "llibreta"]; */
+                
+        /*obj.forEach(myFunction);
+        function myFunction (item, index) {
+            console.log("L'objecte " + item + " està en la posició " + index + " de l'array<br>");
+        }*/
+
+        /*obj.forEach(function(item, index){
+            console.log("L'objecte " + item + " està en la posició " + index + "<br>")
+        }); */
+
+        /*
+        obj.map(function(item, index){
+            console.log("L'objecte " + item + " està en la posició " + index + "<br>")
+        });
+        */
+        
+        
+        /*
+        var i;
+        for(i=0; i < obj.length; i++){
+            console.log("L'objecte " + obj[i] + " està en la posició " + i + "<br>");
+        }
+        */
+
+        /* EXERCICI 8: Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2.
+        Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
+        /* EX 8: funció calculadora, tres paràmetres 
+
+        function calcul (operation, a, b) {
+            if (operation == "suma") {
+                return console.log(a + b);
+            } else if (operation =="resta"){
+                return console.log(a - b);
+            }else {
+                return console.log(a* b);
+            }
+        }
+
+        calcul("suma", 5, 7);
+        calcul("resta", 4, 1);
+        calcul("multiplicacio", 3,5);
+
+        */
+
+
+        /*  LLETRES REPETIDES */
+        /*
+        var name="Xavier";
+        var nameUppercase = name.toUpperCase();
+        alert(nameUppercase);
+        for(var i = 0; i <= nameUppercase.length; i++){
+            console.log(nameUppercase.slice(i, i+1));
+        }
+        */
+
+
+        /*
+        var llistat = ["X", "A", "V", "I", "E", "R"];
+
+        /*
+        for (var i= 0; i <= llistat.length; i++) {
+            console.log(llistat[i]);
+        }
+        */
+       /*
+        llistat.forEach(function (i) {
+            console.log(i);
+        });
+        */
+
+        /*FASE 2
+        //Trobar vocals i consonants
+        var name = "Alej3ndro".toUpperCase();
+        var nameLletres = name.split('');
+        console.log(nameLletres);
+       
+       /*
+        for (var i = 0; i < nameLletres.length; i++){
+            if(!isNaN(nameLletres[i])){
+                console.log("Els noms de persones no contenen el número " + nameLletres[i]);
+            }else if(nameLletres[i]== "A"){
+                console.log("He trobat la vocal A");
+            }else if (nameLletres[i]== "E"){
+                console.log("He trobat la vocal E");
+            }else if (nameLletres[i]== "I"){
+                console.log("He trobat la vocal I");
+            }else if (nameLletres[i]== "O"){
+                console.log("He trobat la vocal O");
+            }else if (nameLletres[i]== "U"){
+                console.log("He trobat la vocal U");
+            }else {
+                console.log("He trobat la consonant " + nameLletres[i]);
+            }
+        }
+        */
+
+        /*
+        for (var i = 0; i < nameLletres.length; i++){
+            var lletra = nameLletres[i];
+            if(!isNaN(lletra)){
+                console.log("Els noms de persones no contenen el número " + lletra);
+            }else {
+            switch (lletra) {
+                case "A":
+                console.log("He trobat la vocal A");
+                break;
+                case "E":
+                console.log("He trobat la vocal E");
+                break;
+                case "I":
+                console.log("He trobat la vocal I");
+                break;
+                case "O":
+                console.log("He trobat la vocal O");
+                break;
+                case "U":
+                console.log("He trobat la vocal U");
+                break;
+                default:
+                    console.log("He trobat la consonant " + lletra);
+
+                }
+            }
+        }
+           
+        */
+
+        /* FASE 3 
+        var obj = {};
+         
+        function poblarObj(lletra, quantitat) {
+            obj.lletra = lletra;
+            obj.quantitat = quantitat;
+        }
+
+        poblarObj("A", 4);
+        poblarObj("B", 2);
+        console.log(obj);
+        */
+       
+        var str = "Alejandro";
+        
+        console.log(str.set([aeiou]));
+       
+
+        /* FASE 4 
+        var firstName = "Alejandro".toUpperCase().split('');
+        var lastName = "Kale".toLocaleUpperCase().split('');
+        console.log(firstName);
+        firstName.push("\" \"");
+        var fullName = firstName.concat(lastName);
+        console.log(fullName);
+
+        for (var i = 0; i < fullName.length; i++){
+            console.log(i + ":" + fullName[i]);
+        }
+        */
+    </script>
+</body>
+</html>

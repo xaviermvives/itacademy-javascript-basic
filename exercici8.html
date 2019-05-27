@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicis JavaScript</title>
+</head>
+<body>
+    <script>
+       
+
+        /* EXERCICI 8: Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2.
+        Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
+        /* EX 8: funció calculadora, tres paràmetres */
+
+        function calcul (operation, a, b) {
+            if (operation == "suma") {
+                return console.log(a + b);
+            } else if (operation =="resta"){
+                return console.log(a - b);
+            }else {
+                return console.log(a* b);
+            }
+        }
+
+        calcul("suma", 5, 7);
+        calcul("resta", 4, 1);
+        calcul("multiplicacio", 3,5);
+
+        
+
+
+        
+    </script>
+</body>
+</html>
